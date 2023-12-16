@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
     num_moves = 0
     node = 'AAA'
-    for _ in range(2):
+    while True:
         node = follow_instructions(node, instructions, map)
         num_moves += len(instructions)
         if node == 'ZZZ':
